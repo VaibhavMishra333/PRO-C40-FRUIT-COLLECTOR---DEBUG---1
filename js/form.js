@@ -44,16 +44,17 @@ class Form{
             this.greeting.style('font-size', '100px');
         });
 
-        
-        this.reset.mousePressed(()=>{
+        this.reset.mousePressed(() => {
             player.updateCount(0);
             game.update(0);
-            //make the gameState & playerCount nodes to 0 in the database
-            var playerInfoRef= database.ref('players');
 
-           //remove the player from the database
-           playerInfoRef.remove();
-          });
+
+
+            var playerInfoRef = database.ref('players');
+            playerInfoRef.remove();
+
+            
+        });
 
     }
 }
