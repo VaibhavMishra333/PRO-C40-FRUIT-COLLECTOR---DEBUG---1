@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+  <script src="libraries/p5.js"></script>
+  <script src="libraries/p5.dom.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+  <script src="libraries/matter.js"></script>
+  <script src="libraries/p5.play.js"></script>
+
+  <script src="js/form.js"></script>
+  <!-- Link game.js and player.js -->
+  <script src="js/game.js"></script>
+  <script src="js/player.js"></script>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+
+
+  <script>
+  // Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyD9keOPXfYfmppmEUnJNSEgZqFMbTlactY",
+  authDomain: "pro-c40-78af5.firebaseapp.com",
+  projectId: "pro-c40-78af5",
+  storageBucket: "pro-c40-78af5.appspot.com",
+  messagingSenderId: "717204109140",
+  appId: "1:717204109140:web:75ca2feaa6b937a936fac1",
+  measurementId: "G-CTKJXFEVQM"
+};
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <script src="sketch.js"></script>
+</body>
+
+</html>
